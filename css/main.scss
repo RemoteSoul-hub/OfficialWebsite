@@ -25,6 +25,8 @@ img {
     }
 }
 header {
+    font-family: audiowide;
+    font-size: 16px;
     display: flex;
     justify-content: space-between;
     padding: 2em;
@@ -165,11 +167,95 @@ section {
         text-align: left;
     }
     .featured, .portfolio-container {
+        display: grid;
         grid-template-columns: 40% auto;
     }
 
     .left, .portfolio-left {
         display: grid;
         place-content: center;
+    } 
+    .right {
+        margin-left: 2em;
+        margin-top: 1em;
     }
+    .skills {
+        margin-top: -5em;
+        margin-bottom: -7em;
+        padding-top: 7em;
+    }
+    .skills-container ul{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 1em;
+    }
+    .portfolio {
+        padding-top: 7em;
+    }
+    .portfolio-container img {
+        margin-left: 2em;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .hero {
+        height: 90vh;
+    }
+    .nav-container {
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+
+        header  {
+            background: #154B8D;
+        }
+    }
+    header {
+          padding: 2em 2em 2em 4em;
+    }
+    .social-header {
+        padding: 2em 4em 2em 0;
+  }
+  section {
+      padding: 4em;
+  }
+
+  .social-header {
+      display: block;
+ 
+  ul {
+      display: flex;
+      justify-content: space-between;
+      width: 7em;
+      float: right;
+
+      img {
+          width: 20px;
+      }
+  }
+}
+.hero {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+        .content {
+            background: #041831;
+            padding: 6em 8em 6em 4em;
+            text-align: left;
+            h1 {
+                font-size: 3em;
+                line-height: 1.2em;
+            }
+        }
+}
+.meet {
+    margin: unset;
+}
+.hero-design {
+    display: unset;
+    margin-left: -39.5%;
+    margin-top: 15%;
+    width: 100%;
+}
 }
