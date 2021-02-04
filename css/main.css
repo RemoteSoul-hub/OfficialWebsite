@@ -150,4 +150,50 @@ section {
   place-content: center;
   margin: 0 auto;
 }
+
+.skills-container ul li .icon-container.one {
+  width: 110px;
+}
+
+.skills-container ul li .icon-container.two {
+  width: auto;
+}
+
+.skills-container ul li .icon-container.three {
+  width: 100px;
+}
+
+.skill-title {
+  font-family: Audiowide;
+  font-weight: bold;
+  color: #fff;
+}
+
+.featured-desc {
+  margin-bottom: 2em;
+}
+
+.portfolio {
+  background: #262626;
+}
+
+.portfolio-container a img {
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 800px) {
+  .featured, .portfolio {
+    text-align: left;
+  }
+  .featured, .portfolio-container {
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
+  }
+  .left, .portfolio-left {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+}
 /*# sourceMappingURL=main.css.map */
