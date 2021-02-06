@@ -49,16 +49,16 @@
        </div>     
        <div class="hero">
            <div class="content">
-               <h1>Beautifully Crafted Web Experiences</h1>
-               <div class="meet">
+               <h1 class="stagger1">Beautifully Crafted Web Experiences</h1>
+               <div class="meet stagger1">
                    <span>👇</span>
                    <p>Get to know me</p>
                </div>
-               <svg class="scroll" width="79" height="127" viewBox="0 0 79 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <svg class="scroll stagger1" width="79" height="127" viewBox="0 0 79 127" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d)">
                 <rect x="9" y="5" width="61" height="109" rx="30.5" stroke="white" stroke-width="10"/>
                 </g>
-                <ellipse cx="39.5" cy="33" rx="17.5" ry="15" fill="white"/>
+                <ellipse class="circle" cx="39.5" cy="33" rx="17.5" ry="15" fill="white"/>
                 <defs>
                 <filter id="filter0_d" x="0" y="0" width="79" height="127" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
@@ -87,7 +87,7 @@
            <div class="left">
                <div class="inner transition2">
                    <p class="subtitle">
-                       Featured Project  </p>
+                       Featured Project  </p>  
                        <a href="#" class="featured-title">Project Name</a>
                        <p class="featured-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id temporibus aliquid est veritatis similique, asperiores officia vitae, autem eligendi consequuntur illum debitis ut. Alias harum, nostrum voluptatum voluptate illo quos!</p>
                    </p>
@@ -156,5 +156,55 @@
         <a href="#"><img src="img/project-default.jpeg" alt="Piano App"></a>
    </div>
        </section>
-</body>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var tl = gsap.timeline();
+        tl.from('.content', {
+            y: '-30%',
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut
+        })
+        tl.from('.stagger1', {
+            opacity: 0,
+            y:-50,
+            stagger: .3,
+            ease: Power4.easeOut,
+            duration: 2
+        }, "-=1.5")
+        tl.from('.hero-design', {
+            opacity: 0, y:50, ease: Power4.easeOut, duration: 1
+        }, "-=2")
+
+        gsap.from('.square-anim',{
+            stagger: .2,
+            scale: 0.1,
+            duration: 1,
+            ease: Back.easeOut.config(1.7)
+        })
+
+        gsap.from('.transition2', {
+            scrollTrigger: {
+                trigger: '.transition2',
+                start: "top bottom"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .3
+        })
+        gsap.from('.transition3', {
+            scrollTrigger: {
+                trigger: '.transition3',
+                start: "top center"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .6
+        })
+    </script>
+    </body>
 </html>

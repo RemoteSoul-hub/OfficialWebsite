@@ -1,7 +1,7 @@
 :root {
   --main-color: #041831;
-  --textblue: #5EDCF8;
-  --lblue: #154B8D;
+  --textblue: #5edcf8;
+  --lblue: #154b8d;
   --white: #fff;
   --bg: #262626;
 }
@@ -9,7 +9,7 @@
 body {
   height: 100vh;
   margin: 0;
-  font-family: 'Roboto', 'Georgia';
+  font-family: "Roboto", "Georgia";
   font-size: 15px;
 }
 
@@ -48,7 +48,7 @@ header {
 }
 
 header .logo {
-  color: #5EDCF8;
+  color: #5edcf8;
   font-weight: bold;
 }
 
@@ -63,7 +63,8 @@ header ul a {
   padding: 0 1em;
 }
 
-.social-header, .hero-design {
+.social-header,
+.hero-design {
   display: none;
 }
 
@@ -89,7 +90,7 @@ header ul a {
 
 .meet span {
   margin-top: 1em;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 .scroll {
@@ -122,23 +123,23 @@ section {
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
-  color: #73DFF6;
-  letter-spacing: .15em;
-  font-size: .85em;
+  color: #73dff6;
+  letter-spacing: 0.15em;
+  font-size: 0.85em;
 }
 
 .featured-title {
   color: #fff;
   font-weight: bold;
   font-size: 1.3em;
-  margin-top: -.4em;
+  margin-top: -0.4em;
   display: block;
 }
 
 .featured-desc {
   color: #fff;
   margin-bottom: 3em;
-  font-size: .9em;
+  font-size: 0.9em;
   line-height: 1.8em;
   font-weight: 500;
 }
@@ -194,16 +195,19 @@ section {
 }
 
 @media only screen and (min-width: 800px) {
-  .featured, .portfolio {
+  .featured,
+  .portfolio {
     text-align: left;
   }
-  .featured, .portfolio-container {
+  .featured,
+  .portfolio-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 40% auto;
         grid-template-columns: 40% auto;
   }
-  .left, .portfolio-left {
+  .left,
+  .portfolio-left {
     display: -ms-grid;
     display: grid;
     place-content: center;
@@ -244,7 +248,7 @@ section {
     background: var(--bg);
   }
   .nav-container header {
-    background: #154B8D;
+    background: #154b8d;
   }
   header {
     padding: 2em 2em 2em 4em;
@@ -304,12 +308,67 @@ section {
     width: auto;
     height: 50vh;
   }
-  .portfolio {
-    text-align: center;
-  }
   .portfolio img {
-    width: auto;
-    height: 50vh;
+    float: right;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  header {
+    padding: 2em 2em 2em 10em;
+  }
+  .social-header {
+    padding: 2em 10em 2em 0;
+  }
+  section {
+    padding: 10em 10em 4em 10em;
+  }
+  .hero .content {
+    padding: 6em 8em 6em 10em;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  header {
+    padding: 2em 2em 2em 20em;
+  }
+  .social-header {
+    padding: 2em 20em 2em 0;
+  }
+  section {
+    padding: 6em 20em 4em 20em;
+  }
+  .hero .content {
+    padding: 9em 20em 6em 20em;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(0px, 56px);
+            transform: translate(0px, 56px);
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(0px, 56px);
+            transform: translate(0px, 56px);
   }
 }
 /*# sourceMappingURL=main.css.map */
