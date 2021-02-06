@@ -185,6 +185,11 @@ section {
   margin-bottom: 2em;
 }
 
+.featured-desc img {
+  width: 160px;
+  height: auto;
+}
+
 .portfolio {
   background: #262626;
 }
