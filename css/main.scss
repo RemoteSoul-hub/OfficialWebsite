@@ -1,4 +1,10 @@
-
+:root {
+    --main-color: #041831;
+    --textblue: #5EDCF8;
+    --lblue: #154B8D;
+    --white: #fff;
+    --bg: #262626;
+}
 
 body {
     height: 100vh;
@@ -58,9 +64,10 @@ header {
 .meet {
     display: flex;
     margin: 0 auto;
-    width: 150px;
+    width: 300px;
     font-weight: bold;
-    color: #73DFF6;
+    color: var(--textblue);
+    font-size: 24px;
     span {
         margin-top: 1em;
         margin-right: .5em;
@@ -117,7 +124,7 @@ section {
 }
 
 .skills {
-    background: #5EDCF8;
+    background: var(--lblue);
 }
 
 .skills-container ul li{
@@ -204,7 +211,7 @@ section {
     .nav-container {
         display: grid;
         grid-template-columns: 66% auto;
-        background: unset;
+        background: var(--bg);
 
         header  {
             background: #154B8D;
@@ -237,7 +244,7 @@ section {
 .hero {
     display: grid;
     grid-template-columns: 66% auto;
-    background: unset;
+    background: var(--bg);
     padding: 0;
         .content {
             background: #041831;
@@ -254,8 +261,23 @@ section {
 }
 .hero-design {
     display: unset;
-    margin-left: -39.5%;
+    margin-left: -39.2%;
     margin-top: 15%;
     width: 100%;
+}
+
+.featured {
+    text-align: center;
+    img {
+        width: auto;
+        height: 50vh;
+    }
+}
+.portfolio {
+    text-align: center;
+    img {
+        width: auto;
+        height: 50vh;
+    }
 }
 }

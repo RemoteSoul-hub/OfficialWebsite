@@ -1,3 +1,11 @@
+:root {
+  --main-color: #041831;
+  --textblue: #5EDCF8;
+  --lblue: #154B8D;
+  --white: #fff;
+  --bg: #262626;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -73,9 +81,10 @@ header ul a {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  width: 150px;
+  width: 300px;
   font-weight: bold;
-  color: #73DFF6;
+  color: var(--textblue);
+  font-size: 24px;
 }
 
 .meet span {
@@ -135,7 +144,7 @@ section {
 }
 
 .skills {
-  background: #5EDCF8;
+  background: var(--lblue);
 }
 
 .skills-container ul li {
@@ -232,7 +241,7 @@ section {
     display: grid;
     -ms-grid-columns: 66% auto;
         grid-template-columns: 66% auto;
-    background: unset;
+    background: var(--bg);
   }
   .nav-container header {
     background: #154B8D;
@@ -267,7 +276,7 @@ section {
     display: grid;
     -ms-grid-columns: 66% auto;
         grid-template-columns: 66% auto;
-    background: unset;
+    background: var(--bg);
     padding: 0;
   }
   .hero .content {
@@ -284,9 +293,23 @@ section {
   }
   .hero-design {
     display: unset;
-    margin-left: -39.5%;
+    margin-left: -39.2%;
     margin-top: 15%;
     width: 100%;
+  }
+  .featured {
+    text-align: center;
+  }
+  .featured img {
+    width: auto;
+    height: 50vh;
+  }
+  .portfolio {
+    text-align: center;
+  }
+  .portfolio img {
+    width: auto;
+    height: 50vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
