@@ -5,11 +5,13 @@
   --white: #fff;
   --bg: #262626;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   height: 100vh;
   margin: 0;
-  font-family: "Roboto", "Georgia";
+  font-family: "ABeeZee", "Georgia";
   font-size: 15px;
 }
 
@@ -36,14 +38,14 @@ img {
 }
 
 header {
-  font-family: audiowide;
+  font-family: ABeeZee;
   font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 2em;
 }
 
@@ -61,6 +63,19 @@ header ul {
 header ul a {
   display: block;
   padding: 0 1em;
+}
+#nav-hover {
+  overflow: hidden;
+  background: linear-gradient(to right, #5edcf8 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+#nav-hover:hover {
+  background-position: 0 100%;
 }
 
 .social-header,
@@ -209,7 +224,7 @@ section {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 40% auto;
-        grid-template-columns: 40% auto;
+    grid-template-columns: 40% auto;
   }
   .left,
   .portfolio-left {
@@ -229,8 +244,8 @@ section {
   .skills-container ul {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
-        grid-template-columns: repeat(3, auto);
+    -ms-grid-columns: (auto) [3];
+    grid-template-columns: repeat(3, auto);
     grid-gap: 1em;
   }
   .portfolio {
@@ -249,7 +264,7 @@ section {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 66% auto;
-        grid-template-columns: 66% auto;
+    grid-template-columns: 66% auto;
     background: var(--bg);
   }
   .nav-container header {
@@ -272,8 +287,8 @@ section {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     width: 7em;
     float: right;
   }
@@ -284,7 +299,7 @@ section {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 66% auto;
-        grid-template-columns: 66% auto;
+    grid-template-columns: 66% auto;
     background: var(--bg);
     padding: 0;
   }
@@ -356,24 +371,24 @@ section {
 @-webkit-keyframes circleAnim {
   from {
     -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
     z-index: 5;
   }
   to {
     -webkit-transform: translate(0px, 56px);
-            transform: translate(0px, 56px);
+    transform: translate(0px, 56px);
   }
 }
 
 @keyframes circleAnim {
   from {
     -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
     z-index: 5;
   }
   to {
     -webkit-transform: translate(0px, 56px);
-            transform: translate(0px, 56px);
+    transform: translate(0px, 56px);
   }
 }
 /*# sourceMappingURL=main.css.map */
