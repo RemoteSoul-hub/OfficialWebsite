@@ -27,6 +27,12 @@ a {
 
 img {
   width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
 }
 
 .nav-container {
@@ -76,6 +82,20 @@ header ul a {
 }
 #nav-hover:hover {
   background-position: 0 100%;
+}
+.pj-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.pj-info i {
+  padding: 20px;
+  color: white;
+  transition: color 0.5s ease;
+}
+.pj-info i:hover {
+  padding: 20px;
+  color: var(--textblue);
 }
 
 .social-header,
@@ -158,6 +178,11 @@ section {
   line-height: 1.8em;
   font-weight: 500;
 }
+.language {
+  font-family: "Anonymous Pro";
+  color: var(--textblue);
+  background-color: rgba(0, 15, 60, 0.5);
+}
 
 .skills {
   background: var(--lblue);
@@ -208,7 +233,9 @@ section {
 .portfolio {
   background: #262626;
 }
-
+.skill-desc img {
+  width: 20%;
+}
 .portfolio-container a img {
   border-radius: 1em;
   margin-bottom: 2em;
@@ -275,6 +302,14 @@ section {
   }
   .social-header {
     padding: 2em 4em 2em 0;
+  }
+  .social-header li {
+    overflow: hidden;
+    transition: transform 0.2s ease;
+  }
+  .social-header li:hover {
+    transform: translateY(-5px);
+    color: red;
   }
   section {
     padding: 4em;
