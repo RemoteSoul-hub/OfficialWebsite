@@ -35,6 +35,71 @@ img:hover {
   cursor: pointer;
 }
 
+/* .btn {
+  padding: 10px;
+  background-color: var(--main-color);
+  color: #fff;
+} */
+/* .wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link_wrapper{
+  position: relative;
+}
+
+.link_wrapper a{
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all .35s;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.icon svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #2ecc71;
+  transition: all .35s;
+}
+
+a:hover{
+  width: 200px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+
+a:hover + .icon{
+  border: 3px solid #2ecc71;
+  right: -25%;
+} */
 .nav-container {
   background: #041831;
 }
@@ -134,7 +199,7 @@ header ul a {
 }
 
 section {
-  padding: 4em 2em;
+  padding: 2em 2em;
   text-align: center;
 }
 
@@ -282,10 +347,7 @@ section {
     margin-left: 2em;
   }
 }
-.contact {
-  background-color: var(--lblue);
-  color: white;
-}
+
 @media only screen and (min-width: 1050px) {
   .hero {
     height: 90vh;
@@ -315,7 +377,7 @@ section {
     color: red;
   }
   section {
-    padding: 4em;
+    padding: 2em;
   }
   .social-header {
     display: block;
@@ -346,7 +408,7 @@ section {
     padding: 6em 8em 6em 4em;
     text-align: left;
   }
-  .hero .content h1 {
+  .hero .content .contact h1 {
     font-size: 3em;
     line-height: 1.2em;
   }
@@ -380,7 +442,7 @@ section {
     padding: 2em 10em 2em 0;
   }
   section {
-    padding: 10em 10em 4em 10em;
+    padding: 4em 10em 4em 10em;
   }
   .hero .content {
     padding: 6em 8em 6em 10em;
@@ -401,7 +463,16 @@ section {
     padding: 9em 20em 6em 20em;
   }
 }
-
+.contact {
+  background-color: var(--lblue);
+  color: white;
+}
+.footer-txt {
+  max-width: 50%;
+  background-color: var(--main-color);
+  padding: 28px;
+  margin-left: 22%;
+}
 .circle {
   animation: circleAnim 1s infinite alternate-reverse;
 }
