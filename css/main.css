@@ -13,6 +13,7 @@ body {
   margin: 0;
   font-family: "ABeeZee", "Georgia";
   font-size: 15px;
+  background-color: var(--bg);
 }
 
 ul {
@@ -35,11 +36,6 @@ img:hover {
   cursor: pointer;
 }
 
-/* .btn {
-  padding: 10px;
-  background-color: var(--main-color);
-  color: #fff;
-} */
 .wrapper {
   position: absolute;
   margin-top: 50px;
@@ -98,8 +94,7 @@ img:hover {
   fill: var(--white);
   transition: all 0.35s;
 }
-/*
-*/
+
 .nav-container {
   background: #041831;
 }
@@ -465,6 +460,7 @@ section {
 }
 .contact {
   background-color: var(--lblue);
+  position: relative;
   color: white;
   height: 30%;
 }
@@ -473,6 +469,15 @@ section {
   background-color: var(--main-color);
   padding: 28px;
   margin-left: 22%;
+}
+
+.footer {
+  margin-top: 10%;
+}
+.footer p {
+  border-radius: 30px;
+  background-color: var(--white);
+  color: #000;
 }
 .circle {
   animation: circleAnim 1s infinite alternate-reverse;
