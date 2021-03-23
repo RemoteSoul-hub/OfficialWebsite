@@ -473,6 +473,7 @@ section {
 
 .footer {
   margin-top: 10%;
+  padding: 10px;
 }
 .footer p {
   border-radius: 30px;
